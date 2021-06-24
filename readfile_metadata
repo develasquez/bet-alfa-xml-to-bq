@@ -1,0 +1,24 @@
+{
+  "description": "Prueba de Pipeline con Pub/Sub",
+  "name": "Readfile",
+  "parameters": [
+    {
+      "name": "output",
+      "helpText": "Bigquery table ",
+      "label": "Bigquery Table project:dataset.table"
+    },
+    {
+      "name": "topic",
+      "helpText": "Topic Name",
+      "label": "Topic Name"
+    },
+    {
+      "regexes": [
+        "^gs:\\/\\/[^\\n\\r]+$"
+      ],
+      "name": "rawFilesLocation",
+      "helpText": "Path for output files. ",
+      "label": "Output Cloud Storage bucket"
+    }
+  ]
+}
